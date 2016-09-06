@@ -28,7 +28,6 @@ public class ServerRunner extends Application implements Runnable {
     final double DEFAULT_SCENE_HEIGHT = 600;
     boolean hasDBeenPressed = false;
     Color randColor = new Color(Math.random(), Math.random(), Math.random(), 1);
-    StrokeContainer sc = new StrokeContainer();
     GraphicsContext gc1 = null;
     Server server = null;
 
@@ -52,7 +51,7 @@ public class ServerRunner extends Application implements Runnable {
         sceneTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         grid.add(sceneTitle, 0, 0);
 
-        Button button = new Button("Sample paint button");
+        Button button = new Button("Start Server");
         HBox hbButton = new HBox(10);
         hbButton.setAlignment(Pos.TOP_LEFT);
         hbButton.getChildren().add(button);

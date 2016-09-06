@@ -32,7 +32,6 @@ public class ClientRunner extends Application implements Runnable {
     boolean hasDBeenPressed = false;
     Stroke stroke = new Stroke();
     Color randColor = new Color(Math.random(), Math.random(), Math.random(), 1);
-    StrokeContainer sc = new StrokeContainer();
     GraphicsContext gc2 = null;
     Scanner scan = new Scanner(System.in);
     Client client = null;
@@ -61,7 +60,7 @@ public class ClientRunner extends Application implements Runnable {
         sceneTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
         grid.add(sceneTitle, 0, 0);
 
-        Button button = new Button("Sample paint button");
+        Button button = new Button("Connect to server");
         HBox hbButton = new HBox(10);
         hbButton.setAlignment(Pos.TOP_LEFT);
         hbButton.getChildren().add(button);

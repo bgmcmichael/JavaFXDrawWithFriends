@@ -13,6 +13,6 @@ public class RunnableGC implements Runnable {
     }
 
     public void run() {
-        gc.strokeOval(stroke.x, stroke.y, stroke.strokeSize, stroke.strokeSize); // <---- this is the actual work we need to do
+        gc.fillOval(stroke.x, stroke.y, stroke.strokeSize, stroke.strokeSize); // <---- this is the actual work we need to do
     }
 }
